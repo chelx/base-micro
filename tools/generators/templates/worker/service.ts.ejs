@@ -1,0 +1,20 @@
+import { Injectable, Logger } from '@nestjs/common';
+
+@Injectable()
+export class <%= className %>Service {
+    private readonly logger = new Logger(<%= className %>Service.name);
+
+        async process(data: any): Promise<{ success: boolean; message: string }> {
+            this.logger.log(`Processing <%= name %> event: ${JSON.stringify(data)}`);
+
+                // TODO: Implement your business logic here
+                return { success: true, message: '<%= className %> processed successfully' };
+                    }
+
+                    async getStatus(id: string): Promise<{ id: string; status: string }> {
+                        this.logger.log(`Getting status for <%= name %> #${id}`);
+
+                            // TODO: Implement status check logic
+                            return { id, status: 'completed' };
+                            }
+                            }

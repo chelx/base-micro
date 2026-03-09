@@ -1,0 +1,18 @@
+import { Controller } from '@nestjs/common';
+import { MessagePattern, Payload } from '@nestjs/microservices';
+import { <%= className %>Service } from './<%= name %>.service';
+
+        @Controller()
+        export class <%= className %>Controller {
+            constructor(private readonly <%= propertyName %>Service: <%= className %>Service) {}
+
+                    @MessagePattern('<%= name %>.process')
+                        async handleProcess(@Payload() data: any) {
+                        return this.<%= propertyName %>Service.process(data);
+                            }
+
+                            @MessagePattern('<%= name %>.status')
+                                async handleStatus(@Payload() data: { id: string }) {
+                                return this.<%= propertyName %>Service.getStatus(data.id);
+                                    }
+                                    }

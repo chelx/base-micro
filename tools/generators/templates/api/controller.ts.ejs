@@ -1,0 +1,12 @@
+import { Controller, Get } from '@nestjs/common';
+import { <%= className %>Service } from './<%= name %>.service';
+
+@Controller('<%= name %>')
+export class <%= className %>Controller {
+  constructor(private readonly <%= propertyName %>Service: <%= className %>Service) {}
+
+  @Get()
+  findAll() {
+    return this.<%= propertyName %>Service.findAll();
+  }
+}

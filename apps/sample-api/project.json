@@ -1,0 +1,74 @@
+{
+  "name": "sample-api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/sample-api/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "webpack-cli build",
+        "args": [
+          "--node-env=production"
+        ],
+        "cwd": "apps/sample-api"
+      },
+      "configurations": {
+        "development": {
+          "args": [
+            "--node-env=development"
+          ]
+        }
+      }
+    },
+    "serve": {
+      "continuous": true,
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "dependsOn": [
+        "build"
+      ],
+      "options": {
+        "buildTarget": "sample-api:build",
+        "runBuildTargetDependencies": false
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "sample-api:build:development"
+        },
+        "production": {
+          "buildTarget": "sample-api:build:production"
+        }
+      }
+    },
+    "db:typeorm": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx ts-node -P apps/sample-api/tsconfig.app.json -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
+        "cwd": "."
+      }
+    },
+    "migration:generate": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx nx db:typeorm sample-api -- migration:generate apps/sample-api/src/database/migrations/{args.name} -d apps/sample-api/src/database/data-source.ts",
+        "cwd": "."
+      }
+    },
+    "migration:run": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx nx db:typeorm sample-api -- migration:run -d apps/sample-api/src/database/data-source.ts",
+        "cwd": "."
+      }
+    },
+    "migration:revert": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx nx db:typeorm sample-api -- migration:revert -d apps/sample-api/src/database/data-source.ts",
+        "cwd": "."
+      }
+    }
+  },
+  "tags": []
+}

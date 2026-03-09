@@ -1,0 +1,8 @@
+name,reach,impact,confidence,effort
+Epic 1: Monorepo & Base Framework,100,massive,high,m
+Epic 2: CLI Tools,100,high,high,m
+Epic 3: Platform Infrastructure,100,high,medium,l
+Epic 4: Auth Service & Security,100,massive,high,m
+Epic 5: Core Business Services,100,high,high,l
+Epic 6: Audit System,100,medium,high,s
+Epic 7: Deployment OpenShift,100,high,medium,l

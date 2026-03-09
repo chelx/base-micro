@@ -1,0 +1,9 @@
+import { Module } from '@nestjs/common';
+import { ScheduleModule } from '@nestjs/schedule';
+import { <%= className %>Service } from './<%= name %>.service';
+
+        @Module({
+        imports: [ScheduleModule.forRoot()],
+        providers: [<%= className %>Service],
+            })
+            export class <%= className %>Module {}

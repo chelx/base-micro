@@ -1,0 +1,13 @@
+import { IsNotEmpty, IsOptional, IsString } from 'class-validator';
+
+export class Create<%= className %>Dto {
+  @IsNotEmpty()
+  @IsString()
+  name: string;
+}
+
+export class Update<%= className %>Dto {
+  @IsOptional()
+  @IsString()
+  name?: string;
+}

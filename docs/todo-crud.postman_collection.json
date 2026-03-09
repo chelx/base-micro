@@ -1,0 +1,175 @@
+{
+  "info": {
+    "name": "Todo CRUD API",
+    "description": "Collection để test CRUD Todo - Base Micro sample-api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000/api",
+      "type": "string"
+    },
+    {
+      "key": "todoId",
+      "value": "",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "1. Create Todo",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "const res = pm.response.json();",
+              "if (res.id) {",
+              "  pm.collectionVariables.set('todoId', res.id);",
+              "  console.log('Saved todoId:', res.id);",
+              "}",
+              "pm.test('Status 201', () => pm.response.to.have.status(201));"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Learn NestJS\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/todo",
+          "host": ["{{baseUrl}}"],
+          "path": ["todo"]
+        }
+      }
+    },
+    {
+      "name": "2. Get All Todos",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/todo",
+          "host": ["{{baseUrl}}"],
+          "path": ["todo"]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status 200', () => pm.response.to.have.status(200));",
+              "pm.test('Returns array', () => pm.expect(pm.response.json()).to.be.an('array'));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "3. Get Todo by ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/todo/{{todoId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["todo", "{{todoId}}"]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status 200', () => pm.response.to.have.status(200));",
+              "pm.test('Has correct id', () => pm.expect(pm.response.json().id).to.eql(pm.collectionVariables.get('todoId')));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "4. Update Todo",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Learn NestJS (updated)\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/todo/{{todoId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["todo", "{{todoId}}"]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status 200', () => pm.response.to.have.status(200));",
+              "pm.test('Name updated', () => pm.expect(pm.response.json().name).to.include('updated'));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "5. Delete Todo",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "{{baseUrl}}/todo/{{todoId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["todo", "{{todoId}}"]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status 200', () => pm.response.to.have.status(200));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "6. Verify Deleted (expect 404)",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/todo/{{todoId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["todo", "{{todoId}}"]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status 404', () => pm.response.to.have.status(404));"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

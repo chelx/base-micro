@@ -1,0 +1,14 @@
+import { Injectable, Logger } from '@nestjs/common';
+import { Cron, CronExpression } from '@nestjs/schedule';
+
+@Injectable()
+export class <%= className %>Service {
+    private readonly logger = new Logger(<%= className %>Service.name);
+
+        @Cron(CronExpression.EVERY_MINUTE)
+        async handleCron() {
+        this.logger.log('Running scheduled job: <%= name %>');
+
+            // TODO: Implement your scheduled task logic here
+            }
+            }

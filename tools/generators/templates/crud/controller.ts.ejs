@@ -1,0 +1,33 @@
+import { Controller, Get, Post, Put, Delete, Body, Param } from '@nestjs/common';
+import { <%= className %>Service } from './<%= name %>.service';
+import { Create<%= className %>Dto, Update<%= className %>Dto } from './<%= name %>.dto';
+
+@Controller('<%= name %>')
+export class <%= className %>Controller {
+  constructor(private readonly <%= propertyName %>Service: <%= className %>Service) {}
+
+  @Get()
+  findAll() {
+    return this.<%= propertyName %>Service.findAll();
+  }
+
+  @Get(':id')
+  findById(@Param('id') id: string) {
+    return this.<%= propertyName %>Service.findById(id);
+  }
+
+  @Post()
+  create(@Body() dto: Create<%= className %>Dto) {
+    return this.<%= propertyName %>Service.create(dto);
+  }
+
+  @Put(':id')
+  update(@Param('id') id: string, @Body() dto: Update<%= className %>Dto) {
+    return this.<%= propertyName %>Service.update(id, dto);
+  }
+
+  @Delete(':id')
+  delete(@Param('id') id: string) {
+    return this.<%= propertyName %>Service.delete(id);
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "name": "audit-service",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/audit-service/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "webpack-cli build",
+        "args": [
+          "--node-env=production"
+        ],
+        "cwd": "apps/audit-service"
+      },
+      "configurations": {
+        "development": {
+          "args": [
+            "--node-env=development"
+          ]
+        }
+      }
+    },
+    "serve": {
+      "continuous": true,
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "dependsOn": [
+        "build"
+      ],
+      "options": {
+        "buildTarget": "audit-service:build",
+        "runBuildTargetDependencies": false
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "audit-service:build:development"
+        },
+        "production": {
+          "buildTarget": "audit-service:build:production"
+        }
+      }
+    },
+    "db:typeorm": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx ts-node -P apps/audit-service/tsconfig.app.json -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
+        "cwd": "."
+      }
+    },
+    "migration:generate": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx nx db:typeorm audit-service -- migration:generate apps/audit-service/src/database/migrations/{args.name} -d apps/audit-service/src/database/data-source.ts",
+        "cwd": "."
+      }
+    },
+    "migration:run": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx nx db:typeorm audit-service -- migration:run -d apps/audit-service/src/database/data-source.ts",
+        "cwd": "."
+      }
+    },
+    "migration:revert": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx nx db:typeorm audit-service -- migration:revert -d apps/audit-service/src/database/data-source.ts",
+        "cwd": "."
+      }
+    }
+  },
+  "tags": []
+}

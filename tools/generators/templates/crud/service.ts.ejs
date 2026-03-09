@@ -1,0 +1,38 @@
+import { Injectable, NotFoundException } from '@nestjs/common';
+import { <%= className %>Repository } from './<%= name %>.repository';
+import { Create<%= className %>Dto, Update<%= className %>Dto } from './<%= name %>.dto';
+import { <%= className %> } from './<%= name %>.entity';
+
+@Injectable()
+export class <%= className %>Service {
+  constructor(private readonly <%= propertyName %>Repository: <%= className %>Repository) {}
+
+  async findAll(): Promise<<%= className %>[]> {
+    return this.<%= propertyName %>Repository.findAll();
+  }
+
+  async findById(id: string): Promise<<%= className %>> {
+    const entity = await this.<%= propertyName %>Repository.findById(id);
+    if (!entity) {
+      throw new NotFoundException(`<%= className %> with id "${id}" not found`);
+    }
+    return entity;
+  }
+
+  async create(dto: Create<%= className %>Dto): Promise<<%= className %>> {
+    return this.<%= propertyName %>Repository.create(dto);
+  }
+
+  async update(id: string, dto: Update<%= className %>Dto): Promise<<%= className %>> {
+    const entity = await this.<%= propertyName %>Repository.update(id, dto);
+    if (!entity) {
+      throw new NotFoundException(`<%= className %> with id "${id}" not found`);
+    }
+    return entity;
+  }
+
+  async delete(id: string): Promise<void> {
+    await this.findById(id);
+    return this.<%= propertyName %>Repository.delete(id);
+  }
+}

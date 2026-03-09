@@ -1,0 +1,2898 @@
+{
+  "apps/audit-service": {
+    "root": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.cache": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.dependsOn": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.inputs": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.outputs": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.executor": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.cwd": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.args": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.command": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.metadata.technologies": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.technologies.0": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.description": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help.command": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help.example": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.continuous": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.executor": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.cwd": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.args": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.command": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies.0": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.description": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.command": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.example": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build-deps": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build-deps.dependsOn": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.continuous": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.dependsOn": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.executor": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options.command": [
+      "apps/audit-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "name": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.args": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.continuous": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.dependsOn": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.buildTarget": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.runBuildTargetDependencies": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm.executor": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm.options": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm.options.command": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm.options.cwd": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate.executor": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate.options": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate.options.command": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate.options.cwd": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.executor": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.options": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.options.command": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.options.cwd": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert.executor": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert.options": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert.options.command": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert.options.cwd": [
+      "apps/audit-service/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "apps/auth-service": {
+    "root": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.cache": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.dependsOn": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.inputs": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.outputs": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.executor": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.cwd": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.args": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.command": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.metadata.technologies": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.technologies.0": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.description": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help.command": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help.example": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.continuous": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.executor": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.cwd": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.args": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.command": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies.0": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.description": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.command": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.example": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build-deps": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build-deps.dependsOn": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.continuous": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.dependsOn": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.executor": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options.command": [
+      "apps/auth-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.test": [
+      "apps/auth-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options": [
+      "apps/auth-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata": [
+      "apps/auth-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.cache": [
+      "apps/auth-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.inputs": [
+      "apps/auth-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.outputs": [
+      "apps/auth-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.executor": [
+      "apps/auth-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.cwd": [
+      "apps/auth-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.env": [
+      "apps/auth-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.command": [
+      "apps/auth-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies": [
+      "apps/auth-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies.0": [
+      "apps/auth-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.description": [
+      "apps/auth-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help": [
+      "apps/auth-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.command": [
+      "apps/auth-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.example": [
+      "apps/auth-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "name": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.args": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.continuous": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.dependsOn": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.buildTarget": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.runBuildTargetDependencies": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "apps/auth-service/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "apps/file-service": {
+    "root": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.cache": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.dependsOn": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.inputs": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.outputs": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.executor": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.cwd": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.args": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.command": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.metadata.technologies": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.technologies.0": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.description": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help.command": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help.example": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.continuous": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.executor": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.cwd": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.args": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.command": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies.0": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.description": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.command": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.example": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build-deps": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build-deps.dependsOn": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.continuous": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.dependsOn": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.executor": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options.command": [
+      "apps/file-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.test": [
+      "apps/file-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options": [
+      "apps/file-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata": [
+      "apps/file-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.cache": [
+      "apps/file-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.inputs": [
+      "apps/file-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.outputs": [
+      "apps/file-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.executor": [
+      "apps/file-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.cwd": [
+      "apps/file-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.env": [
+      "apps/file-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.command": [
+      "apps/file-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies": [
+      "apps/file-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies.0": [
+      "apps/file-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.description": [
+      "apps/file-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help": [
+      "apps/file-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.command": [
+      "apps/file-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.example": [
+      "apps/file-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "name": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.args": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.continuous": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.dependsOn": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.buildTarget": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.runBuildTargetDependencies": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm.executor": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm.options": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm.options.command": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm.options.cwd": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate.executor": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate.options": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate.options.command": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate.options.cwd": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.executor": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.options": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.options.command": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.options.cwd": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert.executor": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert.options": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert.options.command": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert.options.cwd": [
+      "apps/file-service/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "apps/notification-service": {
+    "root": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.cache": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.dependsOn": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.inputs": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.outputs": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.executor": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.cwd": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.args": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.command": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.metadata.technologies": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.technologies.0": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.description": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help.command": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help.example": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.continuous": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.executor": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.cwd": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.args": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.command": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies.0": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.description": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.command": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.example": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build-deps": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build-deps.dependsOn": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.continuous": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.dependsOn": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.executor": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options.command": [
+      "apps/notification-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.test": [
+      "apps/notification-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options": [
+      "apps/notification-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata": [
+      "apps/notification-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.cache": [
+      "apps/notification-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.inputs": [
+      "apps/notification-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.outputs": [
+      "apps/notification-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.executor": [
+      "apps/notification-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.cwd": [
+      "apps/notification-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.env": [
+      "apps/notification-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.command": [
+      "apps/notification-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies": [
+      "apps/notification-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies.0": [
+      "apps/notification-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.description": [
+      "apps/notification-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help": [
+      "apps/notification-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.command": [
+      "apps/notification-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.example": [
+      "apps/notification-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "name": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.args": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.continuous": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.dependsOn": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.buildTarget": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.runBuildTargetDependencies": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm.executor": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm.options": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm.options.command": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm.options.cwd": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate.executor": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate.options": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate.options.command": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate.options.cwd": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.executor": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.options": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.options.command": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.options.cwd": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert.executor": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert.options": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert.options.command": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert.options.cwd": [
+      "apps/notification-service/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "apps/sample-api": {
+    "root": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.cache": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.dependsOn": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.inputs": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.outputs": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.executor": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.cwd": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.args": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.command": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.metadata.technologies": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.technologies.0": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.description": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help.command": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help.example": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.continuous": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.executor": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.cwd": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.args": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.command": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies.0": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.description": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.command": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.example": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build-deps": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build-deps.dependsOn": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.continuous": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.dependsOn": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.executor": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options.command": [
+      "apps/sample-api/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "name": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.args": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.continuous": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.dependsOn": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.buildTarget": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.runBuildTargetDependencies": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm.executor": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm.options": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm.options.command": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm.options.cwd": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate.executor": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate.options": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate.options.command": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate.options.cwd": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.executor": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.options": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.options.command": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.options.cwd": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert.executor": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert.options": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert.options.command": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert.options.cwd": [
+      "apps/sample-api/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "apps/todo": {
+    "root": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.cache": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.dependsOn": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.inputs": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.outputs": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.executor": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.cwd": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.args": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.command": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.metadata.technologies": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.technologies.0": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.description": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help.command": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help.example": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.continuous": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.executor": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.cwd": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.args": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.command": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies.0": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.description": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.command": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.example": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build-deps": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build-deps.dependsOn": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.continuous": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.dependsOn": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.executor": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options.command": [
+      "apps/todo/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "name": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.args": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.continuous": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.dependsOn": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.buildTarget": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.runBuildTargetDependencies": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm.executor": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm.options": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm.options.command": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm.options.cwd": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate.executor": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate.options": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate.options.command": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate.options.cwd": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.executor": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.options": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.options.command": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.options.cwd": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert.executor": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert.options": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert.options.command": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert.options.cwd": [
+      "apps/todo/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "apps/user-service": {
+    "root": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.cache": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.dependsOn": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.inputs": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.outputs": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.executor": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.cwd": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.args": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.command": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.metadata.technologies": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.technologies.0": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.description": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help.command": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help.example": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.continuous": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.executor": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.cwd": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.args": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.command": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies.0": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.description": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.command": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.example": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build-deps": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build-deps.dependsOn": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.continuous": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.dependsOn": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.executor": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options.command": [
+      "apps/user-service/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.test": [
+      "apps/user-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options": [
+      "apps/user-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata": [
+      "apps/user-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.cache": [
+      "apps/user-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.inputs": [
+      "apps/user-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.outputs": [
+      "apps/user-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.executor": [
+      "apps/user-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.cwd": [
+      "apps/user-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.env": [
+      "apps/user-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.command": [
+      "apps/user-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies": [
+      "apps/user-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies.0": [
+      "apps/user-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.description": [
+      "apps/user-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help": [
+      "apps/user-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.command": [
+      "apps/user-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.example": [
+      "apps/user-service/jest.config.cjs",
+      "@nx/jest/plugin"
+    ],
+    "name": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.args": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.continuous": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.dependsOn": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.buildTarget": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.runBuildTargetDependencies": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm.executor": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm.options": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm.options.command": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:typeorm.options.cwd": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate.executor": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate.options": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate.options.command": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:generate.options.cwd": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.executor": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.options": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.options.command": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.options.cwd": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert.executor": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert.options": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert.options.command": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:revert.options.cwd": [
+      "apps/user-service/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "apps/sample-api-e2e": {
+    "root": [
+      "apps/sample-api-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "apps/sample-api-e2e/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test": [
+      "apps/sample-api-e2e/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options": [
+      "apps/sample-api-e2e/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata": [
+      "apps/sample-api-e2e/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.cache": [
+      "apps/sample-api-e2e/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.inputs": [
+      "apps/sample-api-e2e/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.outputs": [
+      "apps/sample-api-e2e/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.executor": [
+      "apps/sample-api-e2e/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.cwd": [
+      "apps/sample-api-e2e/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.env": [
+      "apps/sample-api-e2e/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.command": [
+      "apps/sample-api-e2e/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies": [
+      "apps/sample-api-e2e/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies.0": [
+      "apps/sample-api-e2e/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.description": [
+      "apps/sample-api-e2e/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help": [
+      "apps/sample-api-e2e/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.command": [
+      "apps/sample-api-e2e/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.example": [
+      "apps/sample-api-e2e/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "name": [
+      "apps/sample-api-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "apps/sample-api-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/sample-api-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "implicitDependencies": [
+      "apps/sample-api-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "implicitDependencies.sample-api": [
+      "apps/sample-api-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e": [
+      "apps/sample-api-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.executor": [
+      "apps/sample-api-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.outputs": [
+      "apps/sample-api-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.options": [
+      "apps/sample-api-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.dependsOn": [
+      "apps/sample-api-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.options.jestConfig": [
+      "apps/sample-api-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.options.passWithNoTests": [
+      "apps/sample-api-e2e/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "libs/common": {
+    "root": [
+      "libs/common/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "libs/common/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test": [
+      "libs/common/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options": [
+      "libs/common/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata": [
+      "libs/common/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.cache": [
+      "libs/common/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.inputs": [
+      "libs/common/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.outputs": [
+      "libs/common/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.executor": [
+      "libs/common/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.cwd": [
+      "libs/common/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.env": [
+      "libs/common/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.command": [
+      "libs/common/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies": [
+      "libs/common/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies.0": [
+      "libs/common/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.description": [
+      "libs/common/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help": [
+      "libs/common/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.command": [
+      "libs/common/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.example": [
+      "libs/common/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "name": [
+      "libs/common/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "libs/common/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "libs/common/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "libs/common/project.json",
+      "nx/core/project-json"
+    ],
+    "// targets": [
+      "libs/common/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "libs/common/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "libs/kafka": {
+    "root": [
+      "libs/kafka/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "libs/kafka/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test": [
+      "libs/kafka/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options": [
+      "libs/kafka/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata": [
+      "libs/kafka/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.cache": [
+      "libs/kafka/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.inputs": [
+      "libs/kafka/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.outputs": [
+      "libs/kafka/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.executor": [
+      "libs/kafka/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.cwd": [
+      "libs/kafka/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.env": [
+      "libs/kafka/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.command": [
+      "libs/kafka/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies": [
+      "libs/kafka/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies.0": [
+      "libs/kafka/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.description": [
+      "libs/kafka/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help": [
+      "libs/kafka/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.command": [
+      "libs/kafka/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.example": [
+      "libs/kafka/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "name": [
+      "libs/kafka/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "libs/kafka/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "libs/kafka/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "libs/kafka/project.json",
+      "nx/core/project-json"
+    ],
+    "// targets": [
+      "libs/kafka/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "libs/kafka/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "apps/audit-service-e2e": {
+    "root": [
+      "apps/audit-service-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "apps/audit-service-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "apps/audit-service-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/audit-service-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "implicitDependencies": [
+      "apps/audit-service-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "implicitDependencies.audit-service": [
+      "apps/audit-service-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "apps/audit-service-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e": [
+      "apps/audit-service-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.executor": [
+      "apps/audit-service-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.outputs": [
+      "apps/audit-service-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.options": [
+      "apps/audit-service-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.dependsOn": [
+      "apps/audit-service-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.options.jestConfig": [
+      "apps/audit-service-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.options.passWithNoTests": [
+      "apps/audit-service-e2e/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "libs/interfaces": {
+    "root": [
+      "libs/interfaces/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "libs/interfaces/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "libs/interfaces/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "libs/interfaces/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "libs/interfaces/project.json",
+      "nx/core/project-json"
+    ],
+    "// targets": [
+      "libs/interfaces/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "libs/interfaces/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "libs/interfaces/project.json",
+      "nx/core/project-json"
+    ]
+  }
+}
