@@ -58,6 +58,17 @@ Sử dụng lệnh `npm run <tên-script> -- <tham số>`
    npm run generate:job
    ```
 
+### 2.2 Cấu hình môi trường (Environment Variables)
+
+Dự án sử dụng `@nestjs/config` để quản lý cấu hình.
+- **File cấu hình:** Mọi biến môi trường được đặt tại file `infra/.env`.
+- **Sử dụng trong code:** Luôn sử dụng `ConfigService` để truy xuất biến môi trường, tránh dùng `process.env` trực tiếp trong logic nghiệp vụ.
+```typescript
+constructor(private configService: ConfigService) {}
+const dbHost = this.configService.get<string>('DATABASE_HOST');
+```
+- **Lưu ý:** Tuyệt đối không commit file `.env` lên Git. Hãy cập nhật file `.env.example` nếu bạn thêm biến mới.
+
 ---
 
 ## 3. Communication Protocols & Standards
@@ -206,6 +217,11 @@ Dự án có sẵn những Service trụ cột làm nhiệm vụ đặc thù chu
 ### 6.1 Auth Service & SSO Workflow
 Auth Service xử lý xác thực 2 loại cơ bản: Basic Login & SSO VNeID V2.0. Service này cung cấp thêm gRPC endpoint (`ValidateToken`) để các service khác gọi nội bộ cực nhanh.
 
+**A. Luồng Basic Login**
+![Auth Service Basic Login Workflow](auth_basic_workflow.png)
+
+**B. Luồng SSO VNeID**
+
 ![Auth Service SSO Workflow](auth_sso_workflow.png)
 
 ### 6.2 Audit Service Workflow
@@ -233,3 +249,30 @@ Bất kể bạn nhận được Jira task mới hay luồng mới, hãy tuân t
    - **E2E Test**: Update tại file `e2e-tester.ts` để check toàn bộ workflow API REST Request > Guard Middleware (CASL) > Controller > Service > Response Format DB. Bắt buộc test status code (200, 400, 401, 403, 404).
 6. Viết DTO rõ ràng, đầy đủ `@ApiProperty` để Generate Swagger, kiểm tra localhost Swagger (/api/docs).
 7. Mở Pull Request.
+
+---
+
+## 8. Orchestration & Deployment
+
+Dự án sử dụng cơ chế Microservices được điều phối bởi Docker Compose cho môi trường local và staging.
+
+### 8.1 Chạy toàn bộ hệ thống Local
+Sử dụng script `run-local.sh` để tự động hóa quá trình build Nx và khởi chạy containers:
+```bash
+./run-local.sh
+```
+Script này thực hiện:
+1. Build toàn bộ các service bằng Nx (`nx run-many --target=build`).
+2. Vá (patch) các file `package.json` trong `dist/` để đảm bảo đầy đủ dependencies.
+3. Chạy `docker-compose up --build -d`.
+
+### 8.2 Kiểm tra Logs
+Sử dụng lệnh sau để xem log của tất cả các service đang chạy:
+```bash
+docker-compose logs -f
+```
+
+### 8.3 Cấu hình Production
+- **Dockerfile:** Mỗi service đều có một `Dockerfile.app` chuyên dụng cho việc đóng gói image tối ưu.
+- **CI/CD:** [Ghi chú thêm về quy trình Github Actions / Jenkins nếu có].
+
