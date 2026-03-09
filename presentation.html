@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Micro Framework - Internal Training</title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet"
+        href="https://api.fontshare.com/v2/css?f[]=clash-display@700&f[]=satoshi@400,500,700&f[]=jet-brains-mono@400&display=swap">
+
+    <style>
+        :root {
+            /* Theme: Neon Cyber */
+            --bg-primary: #05060a;
+            --bg-secondary: #0a0b14;
+            --accent: #00ffcc;
+            --accent-glow: rgba(0, 255, 204, 0.3);
+            --secondary: #ff00ff;
+            --text-primary: #ffffff;
+            --text-secondary: #94a3b8;
+            --font-display: 'Clash Display', sans-serif;
+            --font-body: 'Satoshi', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+
+            --slide-padding: clamp(2rem, 8vw, 6rem);
+            --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+            --duration: 0.8s;
+        }
+
+        /* Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-snap-type: y mandatory;
+            overflow-x: hidden;
+            background: var(--bg-primary);
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--text-primary);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Slide Layout */
+        .slide {
+            height: 100vh;
+            width: 100vw;
+            scroll-snap-align: start;
+            padding: var(--slide-padding);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            background: var(--bg-primary);
+        }
+
+        /* Grid Background */
+        .grid-bg {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(0, 255, 204, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 204, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            perspective: 1000px;
+            transform: rotateX(60deg) translateY(-20%);
+            transform-origin: top;
+            z-index: 0;
+            opacity: 0.5;
+        }
+
+        /* Content Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity var(--duration) var(--ease-out-expo), transform var(--duration) var(--ease-out-expo);
+        }
+
+        .slide.active .reveal {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal:nth-child(1) {
+            transition-delay: 0.1s;
+        }
+
+        .reveal:nth-child(2) {
+            transition-delay: 0.2s;
+        }
+
+        .reveal:nth-child(3) {
+            transition-delay: 0.3s;
+        }
+
+        .reveal:nth-child(4) {
+            transition-delay: 0.4s;
+        }
+
+        /* Typography */
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(3rem, 10vw, 7rem);
+            line-height: 0.9;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 4rem);
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            color: var(--accent);
+        }
+
+        p {
+            font-size: clamp(1rem, 1.5vw, 1.5rem);
+            line-height: 1.6;
+            color: var(--text-secondary);
+            max-width: 800px;
+        }
+
+        .accent {
+            color: var(--accent);
+        }
+
+        code {
+            font-family: var(--font-mono);
+            background: rgba(0, 255, 204, 0.1);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            color: var(--accent);
+            font-size: 0.9em;
+        }
+
+        /* Components */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+            width: 100%;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(0, 255, 204, 0.1);
+            padding: 2rem;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+
+        .card h3 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+        }
+
+        .card ul {
+            list-style: none;
+            color: var(--text-secondary);
+        }
+
+        .card li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .card li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        .image-container {
+            margin-top: 1rem;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(0, 255, 204, 0.2);
+            max-height: 55vh;
+            display: flex;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            display: block;
+            filter: brightness(0.8) contrast(1.2);
+            object-fit: contain;
+        }
+
+        /* Progress & Nav */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: var(--accent);
+            box-shadow: 0 0 10px var(--accent);
+            z-index: 100;
+            transition: width 0.3s ease;
+        }
+
+        .nav-dots {
+            position: fixed;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid var(--accent);
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .dot.active {
+            background: var(--accent);
+            box-shadow: 0 0 10px var(--accent);
+            transform: scale(1.5);
+        }
+
+        /* Navigation Hints */
+        .nav-hint {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            opacity: 0.5;
+            z-index: 50;
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --slide-padding: 2rem;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-dots {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress-bar" id="progress"></div>
+    <div class="nav-hint">Use Arrows or Scroll to Navigate</div>
+    <div class="nav-dots" id="dots"></div>
+
+    <!-- Slide 1: Title -->
+    <section class="slide" id="slide-1">
+        <div class="grid-bg" style="transform: rotateX(60deg) translateY(-20%) scale(1.5);"></div>
+        <p class="reveal">Internal Training Session</p>
+        <h1 class="reveal">Base <span class="accent">Micro</span><br>Framework</h1>
+        <p class="reveal">A comprehensive technical deep-dive for the next generation of backend developers.</p>
+    </section>
+
+    <!-- Slide 2: Objectives -->
+    <section class="slide" id="slide-2">
+        <h2 class="reveal">Mục tiêu Đào tạo</h2>
+        <div class="card-grid">
+            <div class="card reveal">
+                <h3>Thống nhất</h3>
+                <ul>
+                    <li>Chuẩn hóa cấu trúc microservices</li>
+                    <li>Áp dụng Best Practices đồng nhất</li>
+                    <li>Sử dụng CLI Generator</li>
+                </ul>
+            </div>
+            <div class="card reveal">
+                <h3>Bảo mật</h3>
+                <ul>
+                    <li>Quản lý Token JWT & Redis Session</li>
+                    <li>Phân quyền sâu với CASL</li>
+                    <li>Audit Log tự động qua Kafka</li>
+                </ul>
+            </div>
+            <div class="card reveal">
+                <h3>Hiệu suất</h3>
+                <ul>
+                    <li>gRPC-first cho giao tiếp nội bộ</li>
+                    <li>Async messaging với Kafka</li>
+                    <li>PostgreSQL & TypeORM tối ưu</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 3: Global Architecture Overview -->
+    <section class="slide" id="slide-3">
+        <h2 class="reveal">Kiến trúc Tổng quan</h2>
+        <p class="reveal">Hệ thống `base-micro` được thiết kế linh hoạt, kết hợp giữa giao tiếp đồng bộ (gRPC) và bất
+            đồng bộ (Kafka).</p>
+        <div class="card-grid" style="margin-top: 2rem;">
+            <div class="card reveal">
+                <h3>REST API</h3>
+                <p>Entry point cho Client & API Gateway. JSON over HTTP.</p>
+            </div>
+            <div class="card reveal">
+                <h3>gRPC (S2S)</h3>
+                <p>Giao tiếp đồng bộ hiệu năng cao giữa các microservices nội bộ.</p>
+            </div>
+            <div class="card reveal">
+                <h3>Kafka (Events)</h3>
+                <p>Message bus cho các bài toán Event-Driven như Audit và Notification.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 4: System Architecture Diagram -->
+    <section class="slide" id="slide-4">
+        <h2 class="reveal">Sơ đồ Kiến trúc Hệ thống</h2>
+        <div class="image-container reveal" style="max-width: 1100px; max-height: 70vh; margin: 0 auto;">
+            <img src="system_architecture.png" alt="System Architecture" style="filter: brightness(1) contrast(1.1);">
+        </div>
+        <p class="reveal" style="text-align: center; margin-top: 2rem; color: var(--accent);">Giao tiếp đa tầng: gRPC
+            Sync & Kafka Async.</p>
+    </section>
+
+    <!-- Slide 5: Code Organization Diagram -->
+    <section class="slide" id="slide-5">
+        <h2 class="reveal">Cấu trúc Nx Monorepo</h2>
+        <div class="image-container reveal" style="max-width: 1000px; max-height: 70vh; margin: 0 auto;">
+            <img src="code_org_architecture.png" alt="Code Organization" style="filter: brightness(1) contrast(1.1);">
+        </div>
+        <p class="reveal" style="text-align: center; margin-top: 2rem; color: var(--accent);">Tổ chức Code chuẩn hóa:
+            Apps, Libs, Tools.</p>
+    </section>
+
+    <!-- Slide 6: CLI-First Development -->
+    <section class="slide" id="slide-6">
+        <h2 class="reveal">CLI-First Development</h2>
+        <p class="reveal">Khuyến nghị sử dụng Nx Generators để đảm bảo tính nhất quán và tiết kiệm thời gian.</p>
+        <div class="card reveal"
+            style="background: var(--bg-secondary); border-left: 4px solid var(--accent); font-family: var(--font-mono);">
+            <div style="margin-bottom: 0.5rem;"><span style="color: #666;"># Tạo Microservice mới</span><br>npm run
+                generate:app --name payment-service</div>
+            <div style="margin-bottom: 0.5rem;"><span style="color: #666;"># Tạo luồng CRUD hoàn chỉnh</span><br>npm run
+                generate:crud --name Product</div>
+            <div><span style="color: #666;"># Tạo Kafka Worker</span><br>npm run generate:worker</div>
+        </div>
+        <p class="reveal" style="margin-top: 1rem; font-size: 1rem;">Mã nguồn được sinh ra đã bao gồm sẵn Swagger, DTOs,
+            và kiến trúc thư mục chuẩn.</p>
+    </section>
+
+    <!-- Slide 5: Communication - gRPC -->
+    <section class="slide" id="slide-5">
+        <h2 class="reveal">Giao tiếp nội bộ: gRPC</h2>
+        <p class="reveal">Thay thế HTTP internally để giảm overhead và tăng độ tin cậy.</p>
+        <div class="card-grid">
+            <div class="card reveal">
+                <h3>Protobuf First</h3>
+                <p>Định nghĩa schema tập trung tại <code>libs/common/src/proto</code>.</p>
+            </div>
+            <div class="card reveal">
+                <h3>Type Safety</h3>
+                <p>Compile tự động sinh ra interface cho cả Client và Server.</p>
+            </div>
+        </div>
+        <div class="card reveal" style="margin-top: 1rem;">
+            <p><span class="accent">Case study:</span> Auth Service cung cấp gRPC <code>ValidateToken</code> để User
+                Service gọi mỗi khi có Request đến API Gateway.</p>
+        </div>
+    </section>
+
+    <!-- Slide 6: Event-Driven: Kafka -->
+    <section class="slide" id="slide-6">
+        <h2 class="reveal">Event-Driven: Kafka</h2>
+        <p class="reveal">Decouple các service thông qua message broker.</p>
+        <div class="image-container reveal" style="max-width: 600px;">
+            <img src="notification_workflow.png" alt="Notification Workflow">
+        </div>
+        <div class="card-grid" style="margin-top: 1rem;">
+            <div class="card reveal" style="padding: 1rem;">
+                <p>Publish: <code>ClientProxy.emit('event_name', payload)</code></p>
+            </div>
+            <div class="card reveal" style="padding: 1rem;">
+                <p>Consume: <code>@EventPattern('event_name')</code></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 7: Security - CASL -->
+    <section class="slide" id="slide-7">
+        <h2 class="reveal">Authorization: CASL</h2>
+        <p class="reveal">Phân quyền chi tiết dựa trên thuộc tính (ABAC) thay vì chỉ Role đơn thuần.</p>
+        <div class="card-grid">
+            <div class="card reveal">
+                <h3>Static Checks</h3>
+                <p>Dùng <code>@CheckPolicies</code> decorator tại Controller.</p>
+            </div>
+            <div class="card reveal">
+                <h3>Dynamic Checks</h3>
+                <p>Sử dụng <code>ability.can(Action.Update, targetObject)</code> trong Service.</p>
+            </div>
+        </div>
+        <div class="card reveal" style="margin-top: 1rem; border-color: var(--secondary);">
+            <p><span style="color: var(--secondary);">Example:</span> User chỉ có quyền <code>Action.Update</code> nếu
+                <code>product.userId === user.id</code>.
+            </p>
+        </div>
+    </section>
+
+    <!-- Slide 8: Core Service - Auth -->
+    <section class="slide" id="slide-8">
+        <h2 class="reveal">Core: Auth Service</h2>
+        <div style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <div class="card reveal">
+                    <h3>Features</h3>
+                    <ul>
+                        <li>Basic Login (Username/Pass)</li>
+                        <li>VNeID SSO V2.0 Integration</li>
+                        <li>Redis Session Management</li>
+                        <li>JWT Access & Refresh Strategy</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="image-container reveal" style="flex: 1; min-width: 400px;">
+                <img src="auth_basic_workflow.png" alt="Auth Workflow">
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 9: Core Service - Audit -->
+    <section class="slide" id="slide-9">
+        <h2 class="reveal">Core: Audit Log</h2>
+        <p class="reveal">Tự động lưu vết mọi hành động đột biến dữ liệu thông qua Event-Driven Audit.</p>
+        <div class="image-container reveal" style="max-width: 900px; margin: 1rem auto;">
+            <img src="audit_workflow.png" alt="Audit Workflow">
+        </div>
+        <p class="reveal" style="text-align: center; font-size: 0.9rem;">Gắn
+            <code>@UseInterceptors(AuditLogInterceptor)</code> để bắt đầu tracking.
+        </p>
+    </section>
+
+    <!-- Slide 10: Development Standards -->
+    <section class="slide" id="slide-11">
+        <h2 class="reveal">Standards & Testing</h2>
+        <div class="card-grid">
+            <div class="card reveal">
+                <h3>Database</h3>
+                <ul>
+                    <li>Quản lý Schema tiêu chuẩn</li>
+                    <li>Sử dụng TypeORM Migrations</li>
+                    <li>Repository Pattern tối ưu</li>
+                </ul>
+            </div>
+            <div class="card reveal">
+                <h3>Testing</h3>
+                <ul>
+                    <li>Unit Test: Target 75% Coverage</li>
+                    <li>E2E Test: <code>e2e-tester.ts</code></li>
+                    <li>Mocking Kafka/gRPC</li>
+                </ul>
+            </div>
+            <div class="card reveal">
+                <h3>Swagger</h3>
+                <ul>
+                    <li>Dùng <code>@ApiProperty</code></li>
+                    <li>Describe schemas rõ ràng</li>
+                    <li>Versioning headers</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 11: Deployment -->
+    <section class="slide" id="slide-11">
+        <h2 class="reveal">Deployment & Orchestration</h2>
+        <div class="image-container reveal" style="max-width: 900px; max-height: 60vh; margin: 0 auto 1.5rem auto;">
+            <img src="deployment_architecture.png" alt="Deployment Architecture"
+                style="filter: brightness(1) contrast(1.1);">
+        </div>
+        <div class="card-grid">
+            <div class="card reveal">
+                <h3>Cloud Native</h3>
+                <p>AWS Ready: ECS, RDS, MSK Kafka.</p>
+            </div>
+            <div class="card reveal">
+                <h3>Docker Compose</h3>
+                <p>Môi trường dev nhanh gọn với <code>./run-local.sh</code>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 12: End -->
+    <section class="slide" id="slide-12" style="text-align: center; align-items: center;">
+        <div class="grid-bg" style="transform: rotateX(80deg) translateY(-50%) scale(2);"></div>
+        <h1 class="reveal">Ready to <span class="accent">Build?</span></h1>
+        <p class="reveal">Hãy bắt đầu bằng việc đọc file <code>README.md</code> và tạo service đầu tiên của bạn.</p>
+        <div class="reveal" style="margin-top: 3rem;">
+            <span class="accent" style="font-weight: 700; font-size: 1.5rem;">Q&A Session</span>
+        </div>
+    </section>
+
+    <script>
+        class Presentation {
+            constructor() {
+                this.slides = document.querySelectorAll('.slide');
+                this.dotsContainer = document.getElementById('dots');
+                this.progressBar = document.getElementById('progress');
+                this.currentIndex = 0;
+                this.isScrolling = false;
+
+                this.initDots();
+                this.initObserver();
+                this.initNavigation();
+                this.updateState();
+            }
+
+            initDots() {
+                this.slides.forEach((_, i) => {
+                    const dot = document.createElement('div');
+                    dot.className = 'dot';
+                    dot.onclick = () => this.goToSlide(i);
+                    this.dotsContainer.appendChild(dot);
+                });
+            }
+
+            initObserver() {
+                const options = { threshold: 0.5 };
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('active');
+                            const index = Array.from(this.slides).indexOf(entry.target);
+                            this.currentIndex = index;
+                            this.updateState();
+                        } else {
+                            entry.target.classList.remove('active');
+                        }
+                    });
+                }, options);
+
+                this.slides.forEach(slide => observer.observe(slide));
+            }
+
+            initNavigation() {
+                window.addEventListener('keydown', (e) => {
+                    if (e.key === 'ArrowDown' || e.key === 'ArrowRight' || e.key === ' ') {
+                        this.goToSlide(this.currentIndex + 1);
+                    } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+                        this.goToSlide(this.currentIndex - 1);
+                    }
+                });
+
+                // Touch support
+                let touchStart = 0;
+                window.addEventListener('touchstart', (e) => touchStart = e.touches[0].clientY);
+                window.addEventListener('touchend', (e) => {
+                    const touchEnd = e.changedTouches[0].clientY;
+                    if (touchStart - touchEnd > 50) this.goToSlide(this.currentIndex + 1);
+                    if (touchEnd - touchStart > 50) this.goToSlide(this.currentIndex - 1);
+                });
+            }
+
+            goToSlide(index) {
+                if (index < 0 || index >= this.slides.length) return;
+                this.slides[index].scrollIntoView({ behavior: 'smooth' });
+            }
+
+            updateState() {
+                // Update Progress Bar
+                const progress = ((this.currentIndex + 1) / this.slides.length) * 100;
+                this.progressBar.style.width = `${progress}%`;
+
+                // Update Dots
+                const dots = document.querySelectorAll('.dot');
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('active', i === this.currentIndex);
+                });
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            new Presentation();
+        });
+    </script>
+</body>
+
+</html>

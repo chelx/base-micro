@@ -182,28 +182,6 @@ services:
         condition: service_healthy
       redis:
         condition: service_healthy
-
-  sample-api:
-    build:
-      context: .
-      dockerfile: Dockerfile.app
-      args:
-        APP_NAME: sample-api
-    container_name: sample-api
-    ports:
-      - "3000:3000"
-    environment:
-      - PORT=3000
-      - DB_HOST=postgres
-      - REDIS_HOST=redis
-      - KAFKA_BROKERS=kafka:29092
-      - CONSUL_HOST=consul
-    depends_on:
-      postgres:
-        condition: service_healthy
-      redis:
-        condition: service_healthy
-
 volumes:
   postgres_data:
   redis_data:
